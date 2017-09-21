@@ -8,14 +8,14 @@
     <img width="200" height="200" vspace="" hspace="25"
       src="https://cdn.rawgit.com/webpack/media/e7485eb2/logo/icon.svg">
   </a>
-  <h1>Compression Plugin</h1>
+  <h1>CompressPlugin</h1>
   <p>Prepare compressed versions of assets to serve them with Content-Encoding.<p>
 </div>
 
 <h2 align="center">Install</h2>
 
 ```bash
-npm i -D compression-webpack-plugin
+npm i -D compress-webpack-plugin
 ```
 
 <h2 align="center">Usage</h2>
