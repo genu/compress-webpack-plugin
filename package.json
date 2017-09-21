@@ -1,17 +1,17 @@
 {
   "name": "compress-webpack-plugin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Tobias Koppers @sokra",
-  "description":
-    "Prepare compressed versions of assets to serve them with Content-Encoding",
+  "description": "Prepare compressed versions of assets to serve them with Content-Encoding",
   "main": "dist/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
   "scripts": {
     "start": "npm run build -- -w",
     "appveyor:test": "npm run test",
-    "build":
-      "cross-env NODE_ENV=production babel src -d dist --ignore 'src/**/*.test.js'",
+    "build": "cross-env NODE_ENV=production babel src -d dist --ignore 'src/**/*.test.js'",
     "clean": "del-cli dist",
     "lint": "eslint --cache src test",
     "lint-staged": "lint-staged",
@@ -21,12 +21,10 @@
     "security": "nsp check",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage":
-      "jest --collectCoverageFrom='src/**/*.js' --coverage",
+    "test:coverage": "jest --collectCoverageFrom='src/**/*.js' --coverage",
     "travis:lint": "npm run lint && npm run security",
     "travis:test": "npm run test -- --runInBand",
-    "travis:coverage":
-      "npm run test:coverage -- --runInBand",
+    "travis:coverage": "npm run test:coverage -- --runInBand",
     "webpack-defaults": "webpack-defaults"
   },
   "dependencies": {
@@ -59,19 +57,19 @@
   "engines": {
     "node": ">= 4.3 < 5.0.0 || >= 5.10"
   },
-  "homepage":
-    "https://webpack.js.org/plugins/compression-webpack-plugin/",
+  "homepage": "https://webpack.js.org/plugins/compression-webpack-plugin/",
   "repository": {
     "type": "git",
-    "url":
-      "git+https://github.com/webpack-contrib/compression-webpack-plugin.git"
+    "url": "git+https://github.com/webpack-contrib/compression-webpack-plugin.git"
   },
   "bugs": {
-    "url":
-      "https://github.com/webpack-contrib/compression-webpack-plugin/issues"
+    "url": "https://github.com/webpack-contrib/compression-webpack-plugin/issues"
   },
   "pre-commit": "lint-staged",
   "lint-staged": {
-    "*.js": ["eslint --fix", "git add"]
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
