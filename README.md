@@ -1,6 +1,4 @@
-[![npm][npm]][npm-url]
 [![deps][deps]][deps-url]
-[![chat][chat]][chat-url]
 
 <div align="center">
   <!-- replace with accurate logo e.g from https://worldvectorlogo.com/ -->
@@ -9,7 +7,7 @@
       src="https://cdn.rawgit.com/webpack/media/e7485eb2/logo/icon.svg">
   </a>
   <h1>CompressPlugin</h1>
-  <p>Prepare compressed versions of assets to serve them with Content-Encoding.<p>
+  <p>Prepare compressed versions of assets to serve them with Content-Encoding. Based on `compression-webpack-plugin`<p>
 </div>
 
 <h2 align="center">Install</h2>
@@ -21,10 +19,10 @@ npm i -D compress-webpack-plugin
 <h2 align="center">Usage</h2>
 
 ``` javascript
-var CompressionPlugin = require("compression-webpack-plugin");
+var CompressPlugin = require("compress-webpack-plugin");
 module.exports = {
 	plugins: [
-		new CompressionPlugin({
+		new CompressPlugin({
 			asset: "[path].gz[query]",
 			algorithm: "gzip",
 			test: /\.(js|html)$/,
@@ -53,45 +51,5 @@ Option Arguments for Zopfli (see [node-zopfli](https://github.com/pierreingleber
 * blocksplittinglast: Default: false,
 * blocksplittingmax: Default: 15
 
-<h2 align="center">Maintainers</h2>
-
-<table>
-  <tbody>
-    <tr>
-      <td align="center">
-        <img width="150" height="150"
-        src="https://avatars3.githubusercontent.com/u/166921?v=3&s=150">
-        </br>
-        <a href="https://github.com/bebraw">Juho Vepsäläinen</a>
-      </td>
-      <td align="center">
-        <img width="150" height="150"
-        src="https://avatars2.githubusercontent.com/u/8420490?v=3&s=150">
-        </br>
-        <a href="https://github.com/d3viant0ne">Joshua Wiens</a>
-      </td>
-      <td align="center">
-        <img width="150" height="150"
-        src="https://avatars3.githubusercontent.com/u/533616?v=3&s=150">
-        </br>
-        <a href="https://github.com/SpaceK33z">Kees Kluskens</a>
-      </td>
-      <td align="center">
-        <img width="150" height="150"
-        src="https://avatars3.githubusercontent.com/u/3408176?v=3&s=150">
-        </br>
-        <a href="https://github.com/TheLarkInn">Sean Larkin</a>
-      </td>
-    </tr>
-  <tbody>
-</table>
-
-
-[npm]: https://img.shields.io/npm/v/compression-webpack-plugin.svg
-[npm-url]: https://npmjs.com/package/compression-webpack-plugin
-
-[deps]: https://david-dm.org/webpack-contrib/compression-webpack-plugin.svg
-[deps-url]: https://david-dm.org/webpack-contrib/compression-webpack-plugin
-
-[chat]: https://img.shields.io/badge/gitter-webpack%2Fwebpack-brightgreen.svg
-[chat-url]: https://gitter.im/webpack/webpack
+[deps]: https://david-dm.org/genu/compress-webpack-plugin.svg
+[deps-url]: https://david-dm.org/genu/compress-webpack-plugin
